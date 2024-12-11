@@ -1,0 +1,13 @@
+<div class="search-container">
+    <mat-button-toggle-group [formControl]="searchByControl" (change)="emitSearch(searchControl.value || '')">
+      <mat-button-toggle value="name">Name</mat-button-toggle>
+      <mat-button-toggle value="email">Email</mat-button-toggle>
+      <mat-button-toggle value="phone">Phone</mat-button-toggle>
+    </mat-button-toggle-group>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Search {{searchByControl.value}}</mat-label>
+      <input matInput [formControl]="searchControl" [placeholder]="'Search by ' + searchByControl.value">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>

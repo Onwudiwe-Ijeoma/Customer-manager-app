@@ -1,0 +1,81 @@
+:host {
+    display: block;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* Style for all mat-form-field elements */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Group sections */
+[formGroupName] {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+[formGroupName] h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Form actions */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Button styles */
+button[mat-button] {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+button[mat-raised-button] {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+mat-spinner {
+    margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    :host {
+        padding: 1rem;
+    }
+    
+    .form-container {
+        padding: 1.5rem;
+    }
+    
+    [formGroupName] {
+        padding: 1rem;
+    }
+}
+  
