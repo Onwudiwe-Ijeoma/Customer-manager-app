@@ -3,7 +3,7 @@
   <span class="example-spacer"></span>
   <button mat-raised-button color="primary" routerLink="/create-customer">
     <mat-icon>add</mat-icon>
-    New Customer
+    Create Customer
   </button>
 </mat-toolbar>
 
@@ -17,12 +17,12 @@
     </ng-container>
 
     <ng-container matColumnDef="email">
-      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <th mat-header-cell *matHeaderCellDef>Email Address</th>
       <td mat-cell *matCellDef="let element">{{element.email}}</td>
     </ng-container>
 
     <ng-container matColumnDef="phone">
-      <th mat-header-cell *matHeaderCellDef>Phone</th>
+      <th mat-header-cell *matHeaderCellDef>Phone Number</th>
       <td mat-cell *matCellDef="let element">{{element.phone}}</td>
     </ng-container>
 

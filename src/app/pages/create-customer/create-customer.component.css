@@ -1,7 +1,7 @@
 :host {
     display: block;
     padding: 1rem;
-    background-color: #eee;
+    background: #f0f0f0;
 }
 
 .form-container {
@@ -11,15 +11,32 @@
     background: white;
 }
 
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+h3 {
+    margin: 0 0 1rem 0;
+    color: #666;
+}
+
 mat-form-field {
+    display: block;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.section {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
+.geo-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .form-actions {
@@ -29,7 +46,25 @@ mat-form-field {
     margin-top: 1rem;
 }
 
-button[mat-raised-button] {
-    min-width: 100px;
+mat-spinner {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    :host {
+        padding: 0.5rem;
+    }
+    
+    .form-container {
+        padding: 0.5rem;
+    }
+    
+    .form-section {
+        padding: 0.75rem;
+    }
+    
+    .geo-fields {
+        grid-template-columns: 1fr;
+    }
 }
   
